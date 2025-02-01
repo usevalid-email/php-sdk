@@ -2,9 +2,9 @@
 
 [![PHP Composer](https://github.com/usevalid-email/php-sdk/actions/workflows/php.yml/badge.svg)](https://github.com/usevalid-email/php-sdk/actions/workflows/php.yml)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/usevalid-email/sdk.svg?style=flat-square)](https://packagist.org/packages/usevalid-email/sdk)
-[![Total Downloads](https://img.shields.io/packagist/dt/usevalid-email/sdk.svg?style=flat-square)](https://packagist.org/packages/usevalid-email/sdk)
-[![License](https://img.shields.io/packagist/l/usevalid-email/sdk.svg?style=flat-square)](https://packagist.org/packages/usevalid-email/sdk)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/usevalid-email/php-sdk.svg?style=flat-square)](https://packagist.org/packages/usevalid-email/php-sdk)
+[![Total Downloads](https://img.shields.io/packagist/dt/usevalid-email/php-sdk.svg?style=flat-square)](https://packagist.org/packages/usevalid-email/php-sdk)
+[![License](https://img.shields.io/packagist/l/usevalid-email/php-sdk.svg?style=flat-square)](https://packagist.org/packages/usevalid-email/php-sdk)
 
 Validate Your Emails with Confidence
 
@@ -26,8 +26,9 @@ use UseValidEmail\Sdk;
 $token = 'your-access-token';
 $sdk = new Sdk($token);
 ```
+
 ### Validate Email
-    
+
 ```php
 use UseValidEmail\Sdk\Exceptions\AccessTokenException;
 use UseValidEmail\Sdk\Exceptions\ForbiddenException;
@@ -60,6 +61,7 @@ try {
     // Handle exception
 }
 ```
+
 ## Testing
 
 ```bash
