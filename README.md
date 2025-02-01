@@ -30,11 +30,6 @@ $sdk = new Sdk($token);
 ### Validate Email
 
 ```php
-use UseValidEmail\Sdk\Exceptions\AccessTokenException;
-use UseValidEmail\Sdk\Exceptions\ForbiddenException;
-use UseValidEmail\Sdk\Exceptions\UnauthorizedException;
-use GuzzleHttp\Exception\GuzzleException;
-
 try {
     $email = 'example@example.com';
     $response = $sdk->emailValidator->validate($email);
@@ -47,12 +42,6 @@ try {
 ### Using Helper Function
 
 ```php
-use GuzzleHttp\Exception\GuzzleException;
-use UseValidEmail\Sdk\Exceptions\AccessTokenException;
-use UseValidEmail\Sdk\Exceptions\ForbiddenException;
-use UseValidEmail\Sdk\Exceptions\UnauthorizedException;
-use UseValidEmail\Sdk\Responses\Validation\ValidationResponse;
-
 try {
     $email = 'example@example.com';
     $response = validateEmail($email);
