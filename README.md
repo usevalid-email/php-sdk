@@ -11,7 +11,7 @@ Validate Your Emails with Confidence
 You can install the package via composer:
 
 ```bash
-composer require usevalid-email/sdk
+composer require usevalid-email/php-sdk
 ```
 
 ## Usage
