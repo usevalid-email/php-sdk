@@ -1,0 +1,17 @@
+.env
+.idea
+vendor
+composer.lock
+composer.phar
+
+# phpunit
+*.cache
+
+# composer
+composer.phar
+/vendor/
+.phpunit.cache
+example.php
+logs/
+**.log
+package.xml

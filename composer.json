@@ -1,0 +1,55 @@
+{
+  "name": "usevalid-email/php-sdk",
+  "type": "library",
+  "description": "Validate Your Emails with Confidence",
+  "keywords": [
+    "email",
+    "validation",
+    "sdk",
+    "api",
+    "usevalid.email"
+  ],
+  "homepage": "https://usevalid.email",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Contact",
+      "email": "contact@usevalid.email",
+      "homepage": "https://usevalid.email"
+    }
+  ],
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "test:coverage": "vendor/bin/pest --coverage",
+    "test:unit": "vendor/bin/pest --testsuite=unit"
+  },
+  "require": {
+    "php": ">=7.4",
+    "localtools/php-http-client": "^0.0.1",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "pestphp/pest": "^3.2 || ^v3.5.1",
+    "laravel/pint": "^1.18",
+    "phpunit/phpunit": "^8.5.40 || ^11.4.3",
+    "mockery/mockery": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "UseValidEmail\\Sdk\\": "src/"
+    },
+    "files": [
+      "src/Utils/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "UseValidEmail\\Sdk\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
